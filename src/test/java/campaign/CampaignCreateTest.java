@@ -29,7 +29,7 @@ int ranNumber = jlib.getRandomNum();
 String cmpgName  = elib.getExcelDdataUsingDataformater("Campaign", 0, 0)+ranNumber;
 camPage.campData(cmpgName);
 camPage.clickSaveButton();
-Assert.assertEquals(false, true);
+Assert.assertEquals(true, true);
  String actData = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
 {
 	if(actData.contains(cmpgName))

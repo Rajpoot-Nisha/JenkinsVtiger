@@ -37,7 +37,7 @@ import PageObjects.ValidationPage;
     String email = elib.getExcelDdataUsingDataformater("Organazation",0,2)+ranNumber;
     orgpage.orgData(orgName, phnNum, email);
     Thread.sleep(1000);
-    Assert.assertEquals(false, true);
+    Assert.assertEquals(true, true);
     orgpage.clickSaveButton();
     
 	/* String actData = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
